@@ -216,134 +216,116 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
+	
+  /*general*/
 
-#masthead {
-  position: static;
-  margin: 0 0 10px 0;
-}
+  .container {
+      clear: both;
+    }
 
-#logo {
-  width: 100%;
-  height: 65px;
-  line-height: 65px;
-  padding-bottom: 50px;
-}
+  /*header*/
 
-nav {
-  width: 100%;
-  margin: 10px 0 10px 0;
-}
-
-#main-container {
-  padding-top: 0px;
-}
-
-.main-section {
-  padding: 15px;
-  width: 95%;
-  margin: 15px 15px 15px 15px;
-}
-
-.auth-image {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  float: left;
-  margin-right: 25px;
-}
-
-.work {
-  width: 100%;
-  margin: 15px 15px 15px 15px;
-}
-
-.work img {
-  width: 95%;
-}
-
-.work h3 {
-  width: 95%;
-}
-
-@media (max-width: 768px) {
+  #masthead {
+    width: auto;
+  }
 
   #logo {
-		margin: 0 0 0 20px;
-  }
-  
-	nav {
-		margin-top: 30px;
-	}
-
-	#main-container {
-		padding-top: 100px;
-  }
-  
-	.main-section {
-		max-width: 95%;
-		padding: 15px;
-		margin: 15px 15px 15px 20px;
-  }
-  
-	.auth-image {
-		width: 50%;
-		height: auto;
-		margin-top: 10px;
-		float: left;
-		margin-right: 25px;
+    width: auto;
   }
 
-	.work {
-		margin: 15px 15px 15px 35px;
+  nav {
+    width: auto;
   }
-  
-	.work img {
-		width: 100%;
-	}
-	.work h3 {
-		width: 100%;
-	}
+
+/*main*/
+
+  #main-container {
+  padding-top: 0;
 }
 
-@media (max-width: 980px) {
-  
- #logo {
-		margin: 0 0 0 100px;
-  }
-  
-	nav {
-		margin: 30px 50px 0 0;
-	}
+  .main-section {
+  max-width: 580px;
+  clear: both;
+  margin: 0 15px 30px 15px;
+}
 
-	#main-container {
-		padding-top: 100px;
+  .auth-image {
+  margin-bottom: 0;
+}
+
+
+/*portfolio*/
+
+  .work {
+  clear: both;
+  width: 510px;
+  margin: 15px 5px 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /*header*/
+
+  #logo {
+    margin-left: 20px;
   }
-  
-	.main-section {
-		max-width: 50%;
-		padding: 30px;
-		margin: 15px 15px 15px 100px;
+
+  nav {
+   margin-right: auto;
   }
-  
-	.auth-image {
-		width: 100%;
-		height: auto;
-		margin-top: 10px;
-		float: left;
-		margin-right: 25px;
+
+  /*main*/
+
+  .main-section {
+    max-width: 698px;
+    clear: both;
+    margin: 0 20px 40px 20px;
   }
-  
-	.work {
-		width: 400px;
-		margin: 10px 10px 10px 10px;
+
+
+  /*portfolio*/
+
+  .work {
+    width: 302px;
+    margin: 20px 0 10px;
   }
-  
-	.work img {
-		width: 100%;
+
+  .work:nth-child(even) {
+    margin-right: 30px;
   }
+}
+
+@media screen and (max-width: 980px) {
   
-	.work h3 {
-		width: 100%;
-	}
+  /*header*/
+
+  #logo {
+    margin-left: 115px;
+  }
+  nav {
+    margin-right: 115px;
+  }
+  .main-section {
+    max-width: 420px;
+    margin-left: 115px;
+  }
+
+  .auth-image {
+    width: 357px;
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+
+  /*portfolio*/
+
+  .work {
+    width: 357px;
+    margin: 20px 0 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 30px;
+  }
 }
